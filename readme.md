@@ -41,7 +41,7 @@
 
 - **Implementation**:
   
-   - The `GenVanillaNN2` integrate an intermediate stick figure representation to improve the training process. This is achieved through the conventional neural networks the (`draw_reduced`) method in the `Skeleton` class, which simplifies the skeleton to a stick figure. This stick figure serves as an intermediate visual step, helping the network learn key pose features before generating the final image. By training on this representation, the model can better capture the structure of each pose, making it easier to produce realistic images in the final output.
+   - The `GenVanillaNN` integrate an intermediate stick figure representation to improve the training process. This is achieved through the conventional neural networks the (`draw_reduced`) method in the `Skeleton` class, which simplifies the skeleton to a stick figure. This stick figure serves as an intermediate visual step, helping the network learn key pose features before generating the final image. By training on this representation, the model can better capture the structure of each pose, making it easier to produce realistic images in the final output.
 - 
 ### Step 5: GAN Implementation
 
@@ -62,7 +62,7 @@ After training, run DanceDemo.py after modifiying the  GEN_TYPE to use the speci
 ## Performance Comparison:
 
 GenGAN produced the best results among the methods due to its adversarial training (presence of discriminateur), but the generated images remain blurry (flou) and lack sharpness.
-GenVanillaNN and GenVanillaNN2 produce less realistic images compared to the GAN model.
+GenVanillaNN  produce less realistic images compared to the GAN model.
 To visualize results, always update the GEN_TYPE in DanceDemo.py to the corresponding generator (1, 2, 3, or 4) and execute the script.
 
 
